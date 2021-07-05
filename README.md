@@ -22,7 +22,7 @@ Note that the computation could be accelerated if running parallelly on GPU.
 ### Train image generators to generate true & fake images (could use Gaussian Mixture Models, LDA). i.e., train GAN model architecture : a generator model for generating new examples and a discriminator model for judging whether generated examples are real.
 
 # Task 2
-SemiSupervised.ipynb is the code for Task 2. The trained supervised discriminator is stored in file supervised_discriminator_model, and the trained unsupervised discriminator is stored in file unsupervised_discriminator_model. 
+SemiSupervised.ipynb is the code for Task 2. 
 ## Overall Idea : 
 Hinted by Task 1, since we've already got many 'fake' images, we can train a semi-supervised model, where the supervised discriminator and the unsupervised discriminator share layers. The supervised discriminator is trained to 'classify' and the unsupervised discriminator is trained to 'judge true image'.
 ### Step 1 - Training Data Preparation : 
