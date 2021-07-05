@@ -1,5 +1,5 @@
 # Task 1 
-GANdiscriminator.ipynb is the code for Task 1. The trained discriminator is stored in file discriminator_model, and matched_images_800.pkl stores 800 matched images (not complete due to computational limitation). The figure ExampleOutput.png is some plotting of the output images.
+discriminator.ipynb is the code for Task 1. The trained discriminator is stored in file discriminator_model, and matched_images_800.pkl stores 800 matched images (not complete due to computational limitation). The figure ExampleOutput.png is some plotting of the output images.
 ## Overall Idea : 
 Train a binary discriminator s.t. the prediction for true image is close to 1 and prediction for fake image is close to 0. Then for all of the possible mathcing of half-pieces, if the score is close to 1 (> 0.98 in my experiment setting), we claim that image is a 'good' match and we put that matched image into our output.
 ### Step 1 - Training Data Preparation : 
