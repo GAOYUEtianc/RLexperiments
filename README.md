@@ -19,7 +19,7 @@ Note that the computation could be accelerated if running parallelly on GPU.
 
 ## Further Possible Improvements
 ### Produce more fake images by cutting and pasting
-### Train image auto-encoders to generate true & fake images (could use Gaussian Mixture Models)
+### Train image generators to generate true & fake images (could use Gaussian Mixture Models, LDA). i.e., train GAN model architecture : a generator model for generating new examples and a discriminator model for judging whether generated examples are real.
 
 # Task 2
 SemiSupervised.ipynb is the code for Task 2. The trained supervised discriminator is stored in file supervised_discriminator_model, and the trained unsupervised discriminator is stored in file unsupervised_discriminator_model. 
@@ -38,4 +38,4 @@ The supervised discriminator and unsupervised discriminator share layers, they b
 In each epoch, train the supervised discriminator using batches of labeled data, and train unsupervised discriminator using batches of unlabeled data (from the expanded dataset). 
 
 ## Further Possible Improvements
-### Train image generators (autoEncoder) to generate true & fake images 
+### Train image generators to generate true & fake images 
